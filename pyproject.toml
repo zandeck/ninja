@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "pg-tuto"
+version = "0.1.0"
+description = ""
+authors = ["Matt <matthieu.zandecki@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.12,<3.13"
+pygame-ce = "^2.4.1"
+numpy = "^1.26.4"
+pyinstaller = "^6.6.0"
+setuptools = "69.5.1"
+
+
+[tool.poetry.group.dev.dependencies]
+ruff = "^0.4.4"
+ruff-lsp = "^0.0.53"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.ruff]
+line-length = 120
